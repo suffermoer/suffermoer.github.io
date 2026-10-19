@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>作品 — 林一</title>
+  <meta name="description" content="林一的精选项目：产品设计、品牌体验与创意开发。">
+  <meta name="theme-color" content="#f2efe8">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/pages.css">
+  <script>
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem("portfolio-theme"); } catch (error) {}
+      var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+</head>
+<body class="page-projects">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
+  <header class="site-header" data-header>
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="林一，首页">
+        <span class="brand-mark" data-site="initials">LY</span>
+        <span class="brand-text"><strong data-site="name">林一</strong><span data-site="navRole">Product Designer</span></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="projects.html" class="is-active" aria-current="page">作品</a>
+        <a href="resume.html">简历</a>
+        <a class="nav-contact" href="index.html#contact">联系我 <span aria-hidden="true">↗</span></a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深浅主题">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.1A8.5 8.5 0 0 1 9.9 3.5 8.5 8.5 0 1 0 20.5 14.1Z"/></svg>
+        </button>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-controls="site-nav" aria-expanded="false" aria-label="打开菜单"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero container">
+      <nav class="breadcrumb reveal" aria-label="面包屑"><a href="index.html">首页</a><span aria-hidden="true">/</span><span>作品</span></nav>
+      <div class="page-hero-grid">
+        <div class="reveal">
+          <p class="eyebrow">Archive / 2023 — 2026</p>
+          <h1 class="page-title">作品，<br><em>思考留下的痕迹。</em></h1>
+        </div>
+        <div class="page-hero-copy reveal">
+          <p>这里有产品、品牌，也有一些介于两者之间的实验。每个项目都保留了从问题到结果的完整脉络。</p>
+          <div class="project-count">
+            <strong id="project-result-count">显示 6 个作品</strong>
+            <span>Selected projects</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-browser container" aria-label="作品列表">
+      <div class="filter-bar reveal" id="project-filters" role="group" aria-label="按类型筛选作品"></div>
+      <div class="project-grid" id="projects-grid"></div>
+    </section>
+
+    <section class="archive-cta container reveal">
+      <div>
+        <p class="section-kicker">More to come</p>
+        <h2>下一个项目，<br><em>也许和你有关。</em></h2>
+      </div>
+      <a class="btn btn-light" href="index.html#contact">开始聊聊 <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-footer></footer>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+  <script src="assets/data.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

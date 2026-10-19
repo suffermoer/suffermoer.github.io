@@ -4,9 +4,9 @@
  */
 window.PORTFOLIO_DATA = {
   site: {
-    name: "艾鹭",
-    initials: "AL",
-    englishName: "AI LU",
+    name: "林一",
+    initials: "Lin Yi",
+    englishName: "LIN YI",
     role: "产品设计师 & 设计工程师",
     navRole: "Product Designer / Design Engineer",
     location: "上海，中国",
